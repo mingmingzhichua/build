@@ -25,7 +25,7 @@ jobs:
           export KBUILD_BUILD_USER=mingmingzhichu
           export KBUILD_BUILD_HOST=mingmingzhichu
           cd kernel
-          make ARCH=arm64 CC=clang LD=ld.lld O=../out vendor/sm8150-perf_defconfig
+          make ARCH=arm64 CC=clang LD=ld.lld O=../out vendor/atoll-perf_defconfig
           make ARCH=arm64 CC=clang LD=ld.lld O=../out -j16
           cd ..
           git clone https://github.com/osm0sis/AnyKernel3
